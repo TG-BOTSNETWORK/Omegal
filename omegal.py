@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 api_id = "22363963"
 api_hash = "5c096f7e8fd4c38c035d53dc5a85d768"
-bot_token = "7154920882:AAE2iUvz9UBVx_TsWVNh2IgMA26JCMK2JoY"
+bot_token = "7261854045:AAEkLGFtRXNnZXvNCs8IktaRqM9ZT1lrFVw"
 
 app = Client("OmegleBot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
