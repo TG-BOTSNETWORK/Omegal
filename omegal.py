@@ -10,7 +10,8 @@ bot_token = "7261854045:AAEkLGFtRXNnZXvNCs8IktaRqM9ZT1lrFVw"
 app = Client("OmegleBot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # Initialize MongoDB client
-mongo_client = MongoClient("mongodb+srv://Amala203145:Amala2031456@cluster0.t9ibfge.mongodb.net/?retryWrites=true&w=majority")
+mongo_client = MongoClient("mongodb://Amala203145:Amala2031456@cluster0.t9ibfge.mongodb.net/?retryWrites=true&w=majority",
+                           connectTimeoutMS=30000, serverSelectionTimeoutMS=30000)
 db = mongo_client["omegle_bot"]
 users_collection = db["users"]
 
